@@ -1,0 +1,154 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.list-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  width: 100%;
+  max-width: 400px;
+}
+
+#todo-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+}
+
+#todo-form input[type="text"] {
+  width: 90%;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.2s ease;
+}
+
+#todo-form input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+#todo-form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+#todo-form button:hover {
+  background-color: #0056b3;
+}
+
+#todo-form button:active {
+  background-color: #003f91;
+}
+
+.list-display {
+  margin: 20px auto;
+  max-width: 800px;
+  width: 600px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tableForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.tableForm thead {
+  margin: 50px;
+}
+.tableForm th {
+  background-color: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 2px solid #0056b3;
+}
+
+#to-do-table tr {
+  border-bottom: 1px solid #ccc;
+}
+
+#to-do-table td {
+  padding: 10px;
+}
+
+#to-do-table button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+#to-do-table button:hover {
+  background-color: #0056b3;
+}
+.completed {
+  text-decoration: line-through;
+  color: #a0a0a0;
+  background-color: #e0e0e0;
+}
+
+.deleted {
+  display: none;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  font-weight: bold;
+}
+
+button[disabled] {
+  background-color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+.empty-message {
+  text-align: center;
+  font-weight: bold;
+  color: #007bff;
+  margin-top: 20px;
+  display: none;  /* Initially hidden */
+}

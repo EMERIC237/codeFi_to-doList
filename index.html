@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="styles.css" type="text/css" rel="stylesheet" />
+    <script src="./TodoItem.js" defer></script>
+    <script src="./TodoList.js" defer></script>
+    <script src="./todoUI.js" defer></script>
+    <script src="./main.js" defer></script>
+    <title>MY_TODO</title>
+  </head>
+  <body onload="updateListFromStorage()">
+    <header>
+      <h1>Welcome to your to-do List</h1>
+    </header>
+    <main class="container">
+      <section class="list-input">
+        <form id="todo-form">
+          <label for="todo">
+            Enter your next task here:
+            <input
+              type="text"
+              required
+              name="todo"
+              id="todo"
+              placeholder="Enter your next task here"
+            />
+          </label>
+          <button type="submit">ADD</button>
+        </form>
+      </section>
+      <section class="list-display">
+        <table class="tableForm" id="to-do-table">
+          <thead>
+            <tr>
+              <th>The stuff you have to Do😅:</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <p class="empty-message" id="emptyMessage">
+          YOUR TO-DO LIST IS CURRENTLY EMPTY. GOOD JOB!!!
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
